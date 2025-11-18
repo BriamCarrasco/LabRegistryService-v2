@@ -1,0 +1,14 @@
+## Target folders ##
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+
+### VS Code ###
+.vscode/
+
+### Wallet ###
+
+/Wallet_FULLSTACKIII
+Wallet_FULLSTACKIII.zip
