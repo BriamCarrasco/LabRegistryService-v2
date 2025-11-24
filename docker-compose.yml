@@ -1,0 +1,8 @@
+services:
+  lab-registry-service-v2:
+    build: .
+    image: lab-registry-service-v2:latest
+    ports:
+      - "8082:8082"
+    env_file:
+      - .env
