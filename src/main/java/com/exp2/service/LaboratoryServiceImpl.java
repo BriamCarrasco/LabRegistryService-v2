@@ -1,6 +1,5 @@
 package com.exp2.service;
 
-
 import com.exp2.exception.DuplicateResourceException;
 import com.exp2.model.Laboratory;
 import com.exp2.repository.LaboratoryRepository;
@@ -29,7 +28,7 @@ public class LaboratoryServiceImpl implements LaboratoryService {
     /**
      * Guarda un nuevo laboratorio en la base de datos.
      * Lanza una excepción si el laboratorio ya existe.
-     *
+     * 
      * @param laboratory Laboratorio a guardar.
      * @return Laboratorio guardado.
      * @throws DuplicateResourceException si ya existe un laboratorio con el mismo
@@ -46,7 +45,7 @@ public class LaboratoryServiceImpl implements LaboratoryService {
 
     /**
      * Obtiene la lista de todos los laboratorios.
-     *
+     * 
      * @return Lista de laboratorios.
      */
     @Override
@@ -56,7 +55,7 @@ public class LaboratoryServiceImpl implements LaboratoryService {
 
     /**
      * Busca un laboratorio por su ID.
-     *
+     * 
      * @param id ID del laboratorio.
      * @return Un Optional con el laboratorio encontrado o vacío si no existe.
      */
@@ -67,7 +66,7 @@ public class LaboratoryServiceImpl implements LaboratoryService {
 
     /**
      * Actualiza los datos de un laboratorio existente.
-     *
+     * 
      * @param id         ID del laboratorio a actualizar.
      * @param laboratory Datos nuevos del laboratorio.
      * @return Laboratorio actualizado.
@@ -90,7 +89,7 @@ public class LaboratoryServiceImpl implements LaboratoryService {
 
     /**
      * Elimina un laboratorio por su ID.
-     *
+     * 
      * @param id ID del laboratorio a eliminar.
      */
     @Override
@@ -100,7 +99,7 @@ public class LaboratoryServiceImpl implements LaboratoryService {
 
     /**
      * Busca laboratorios por especialidad.
-     *
+     * 
      * @param specialty Especialidad a buscar.
      * @return Lista de laboratorios con la especialidad indicada.
      */
@@ -112,7 +111,7 @@ public class LaboratoryServiceImpl implements LaboratoryService {
     /**
      * Busca laboratorios por nombre (búsqueda parcial, sin distinguir
      * mayúsculas/minúsculas).
-     *
+     * 
      * @param name Nombre o parte del nombre a buscar.
      * @return Lista de laboratorios que coinciden con el nombre.
      */
